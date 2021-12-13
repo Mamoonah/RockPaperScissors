@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: lightblue;
+    margin: 0;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    height: 30%;
+    width: 40%;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: white;
+}
+
+.score {
+    margin: 25px;
+}
+
+.points {
+    margin: 10px;
+}
+
+.popup-background{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 3;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 50%;
+    height: 30%;
+    border-radius: 10px;
+    background-color: white;
+    z-index: 4;
+    backdrop-filter: blur(10px);
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+}
+
+#rock {
+    mask-image: url('./icons/rock.svg');
+    -webkit-mask-image: url('./icons/rock.svg');
+    width: 100px;
+    height: 100px;
+}
+
+#paper {
+    mask-image: url('./icons/paper.svg');
+    -webkit-mask-image: url('./icons/paper.svg');
+    width: 100px;
+    height: 100px;
+}
+
+#scissors {
+    mask-image: url('./icons/scissors.svg');
+    -webkit-mask-image: url('./icons/scissors.svg');
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
+.icon {
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 300px black;
+    background-color: rgba(0, 0, 0, 0.6);
+    mask-size: cover;
+    -webkit-mask-size: cover;
+}
+
+.icon:hover {
+    background-color: rgba(0, 100, 0, 1);
+    cursor: pointer;
+}
